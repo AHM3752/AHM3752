@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اختبار التوظيف</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            direction: rtl;
+            text-align: right;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .question h3 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        .answers {
+            list-style: none;
+            padding: 0;
+        }
+        .answers li {
+            margin-bottom: 10px;
+        }
+        .submit-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        .submit-btn:hover {
+            background-color: #0056b3;
+        }
+        .image-question {
+            text-align: center;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>اختبار التوظيف</h1>
+        
+        <!-- Question 1 -->
+        <div class="question">
+            <h3>1. عندما تواجه ضغط عمل كبير، ما هي أولويتك؟</h3>
+            <ul class="answers">
+                <li><input type="radio" name="q1" value="a"> تقسيم المهام وإتمام الأكثر أهمية</li>
+                <li><input type="radio" name="q1" value="b"> محاولة إكمال كل شيء في وقت واحد</li>
+                <li><input type="radio" name="q1" value="c"> طلب المساعدة فورًا</li>
+                <li><input type="radio" name="q1" value="d"> تأجيل العمل الأقل إلحاحًا</li>
+            </ul>
+        </div>
+
+        <!-- Question 2 (Image-based) -->
+        <div class="question">
+            <h3>2. حدد الشكل المختلف عن الآخرين:</h3>
+            <div class="image-question">
+                <img src="shapes.png" alt="أشكال هندسية" width="300">
+            </div>
+            <ul class="answers">
+                <li><input type="radio" name="q2" value="a"> مثلث</li>
+                <li><input type="radio" name="q2" value="b"> مربع</li>
+                <li><input type="radio" name="q2" value="c"> دائرة</li>
+                <li><input type="radio" name="q2" value="d"> مستطيل</li>
+            </ul>
+        </div>
+
+        <!-- Question 3 (Math-based) -->
+        <div class="question">
+            <h3>3. حل المعادلة: 12 × 3 + 4 ÷ 2 = ؟</h3>
+            <ul class="answers">
+                <li><input type="radio" name="q3" value="a"> 40</li>
+                <li><input type="radio" name="q3" value="b"> 38</li>
+                <li><input type="radio" name="q3" value="c"> 48</li>
+                <li><input type="radio" name="q3" value="d"> 34</li>
+            </ul>
+        </div>
+
+        <!-- Additional Questions -->
+        <!-- Repeat similar structure for remaining questions -->
+
+        <!-- Submit Button -->
+        <button class="submit-btn">إرسال الإجابات</button>
+    </div>
+</body>
+</html>
+      - name: Run a one-line script
+        run: echo Hello, world!
+
+      # Runs a set of commands using the runners shell
+      - name: Run a multi-line script
+        run: |
+          echo Add other actions to build,
+          echo test, and deploy your project.
